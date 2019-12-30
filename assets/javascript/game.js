@@ -1,24 +1,24 @@
-
-var game = {
-    pokemonArray = ["Bulbasaur", "Abra", "Pikachu"]
-    
-    x=prompt("Please enter a letter")
-
-
-    comparison: function(x){
-    for (var i=0; i<this.pokemonArray.length[i];i++){
-        if x === pokemonArray[1][1]
-            console.log("pokemon is " + pokemonArray[i])
-            //show at bottom
-            //remove number of guesses
-            //show letter
-    }
-    }
-
-
-}
-console.log(game.pokemonArray[2])
-//prints Pikachu
-document.onkeyup = function{
-    (game.function())
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
   }
+
+
+
+
+var pokemonArray = ["Bulbasaur", "Squirtle", "Charmander"]
+var answer = pokemonArray[getRandomInt(pokemonArray.length)]
+var guess;
+var turns=20
+
+
+for(i=0;i<turns;i++){
+    guess=prompt("What is your guess");
+    if (answer[0] == guess){
+        alert("You guessed correctly");
+        turns--;
+        
+    } else{
+        alert("Sorry try again");
+        turns--;
+    }
+}
