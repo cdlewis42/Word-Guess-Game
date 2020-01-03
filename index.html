@@ -2,13 +2,28 @@
 <heading>
     <title>Pokemon Word Guess</title>
     <link rel = "stylesheet" href = "assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </heading>
 <body>
+    <h1>Pokemon Word Guess</h1>
+    <div class="col-lg-12 text-center pb-3">
+        <p><h4 id="welcome" class="blink">Press Any Key To Get Started!</h5></p>
+        <br>
+        <div><h5>Word:  <span id="currentWord"></span></h5></div>
+        <br>
+        <div><h6>Wins:  <span id="totalWins" class="varColor"></span></h6></div>
+        
+        <div><h6>Turns:  <span id="remainingGuesses" class="varColor"></span></h6></div>
+        
+        <div><h6>Already Guessed:  <span id="guessedLetters" class="varColor"></span></h6></div>
+    
+    </div>
 
 
 
     <script src="assets/javascript/game.js">
     </script>
+
 
 
 
