@@ -5,3 +5,34 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+.navbar{
+  background-color:#ffdb4d;
+  text-align:center;
+}
+#pokemonImg{
+  height:200px;
+  width:500px;
+  position:relative;
+  left:400px
+
+}
+.unknown{
+  height:50px;
+  width:50px;
+  position: relative;
+  left:600px;
+  bottom:60px;
+  transform:rotate(20deg);
+  background-color:#ffdb4d;
+  border:2px solid black;
+}
+.unknown2{
+  height:50px;
+  width:50px;
+  position:relative;
+  left: 650px;
+  bottom:60px;
+  transform:rotate(20deg);
+  background-color:#ffdb4d;
+  border:2px solid black;
+}

@@ -4,7 +4,7 @@ var possibleWords = [
     "Charmander",
     "Pikachu",
     "Mankey",
-    "Onyx"
+    "Onix"
     
   ];
   
@@ -114,10 +114,7 @@ var possibleWords = [
         
         
         usedGuessingwWords.push(wordToMatch);
-        console.log(usedGuessingwWords)
-        
-       
-        
+        numGuess=15;
         guessingWord = wordToMatch.split();
         pause = true;
         loseSound.play();
