@@ -2,16 +2,24 @@
   src:url(../fonts/PokemonGb-RAeo.ttf);
   font-family: "pokemonGB";
 }
-html { 
-    background: url(../images/pokemonbackground2.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body { 
+    background: url(../images/pokemonbackground2.jpg) 
   }
+.container{
+    background-color:white;
+    padding:40px;
+    text-align: center;
+
+  }
+
 .navbar{
   background-color:#ffdb4d;
   text-align:center;
+}
+.headimg{
+  background-color:#cc0000;
+  padding-bottom:15px;
+  border-bottom: 2px solid black;
 }
 #pokemonImg{
   height:200px;
