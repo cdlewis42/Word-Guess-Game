@@ -15,9 +15,6 @@ var possibleWords = [
   var numGuess = 15;
   var wins = 0;
   var pause = false;
-  var loseSound = new Audio("./assets/sounds/ahahah.mp3");
-  var winSound = new Audio("./assets/sounds/clever.wav");
-  var championSound = new Audio("./assets/sounds/crazysob.mp3");
   
   function initializeGame() {
   
@@ -55,7 +52,7 @@ var possibleWords = [
           guessingWord.push(" ")
         } 
         else {
-          guessingWord.push("_");
+          guessingWord.push(" _ ");
         }
       }
       updateDisplay();
@@ -64,7 +61,7 @@ var possibleWords = [
   
   function updateDisplay () {
     document.getElementById("totalWins").innerText = wins;
-    document.getElementById("currentWord").innerText = guessingWord.join("");
+    document.getElementById("currentWord").innerText = guessingWord.join(" ");
     document.getElementById("remainingGuesses").innerText = numGuess;
     document.getElementById("guessedLetters").innerText =  guessedLetters.join(" ");
   };
@@ -96,7 +93,6 @@ var possibleWords = [
           console.log(usedGuessingwWords);
           numGuess=15;
           pause = true;
-          winSound.play();
           updateDisplay();
           setTimeout(resetGame, 4000);
         }
