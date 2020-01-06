@@ -4,7 +4,20 @@ var possibleWords = [
     "Charmander",
     "Pikachu",
     "Mankey",
-    "Onix"
+    "Onix",
+    "Gengar",
+    "Pidgey",
+    "Venonat",
+    "Clefairy",
+    "Lickitung",
+    "Horsea",
+    "Ditto",
+    "Drowzee",
+    "Abra",
+    "Poliwag",
+    "Exeggcute",
+    "Bellsprout",
+    "Machop"
     
   ];
   
