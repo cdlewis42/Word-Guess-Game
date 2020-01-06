@@ -72,6 +72,7 @@ var possibleWords = [
     }
   };
   
+
   function updateDisplay () {
     document.getElementById("totalWins").innerText = wins;
     document.getElementById("currentWord").innerText = guessingWord.join(" ");
@@ -100,9 +101,8 @@ var possibleWords = [
       if (letter === wordToMatch[i]) {
         guessingWord[i] = letter
         foundLetter = true
-        if (guessingWord.join("") === wordToMatch) {
-          wins++
-          usedGuessingwWords.push(wordToMatch)
+        if (guessingWord.join(" ") === wordToMatch) {
+          wins++;
           console.log(usedGuessingwWords);
           numGuess=15;
           pause = true;
@@ -126,7 +126,6 @@ var possibleWords = [
         numGuess=15;
         guessingWord = wordToMatch.split();
         pause = true;
-        loseSound.play();
         setTimeout(resetGame, 4000);
       }
     }
